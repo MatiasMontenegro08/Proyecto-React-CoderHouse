@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://matiasmontenegro08.github.io/Proyecto-React-CoderHouse/",
+  "homepage": "https://github.com/MatiasMontenegro08/Proyecto-React-CoderHouse",
 
   "scripts": {
     "dev": "vite",
