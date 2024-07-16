@@ -1,5 +1,5 @@
 import React from 'react'
-import logoTienda from '../../img/Logosublimarte.png'
+import logoTienda from '../../assets/img/Logosublimarte.png'
 
 const ListaNavegacion = () => {
     return (
