@@ -1,14 +1,15 @@
 import React from 'react'
 import logoTienda from '../../assets/img/Logosublimarte.png'
+import { Link } from 'react-router-dom';
 
 const ListaNavegacion = () => {
     return (
         <div className='lista'>
-            <img src={logoTienda} alt="Logo sublimarte" />
+            <Link to="/"><img src={logoTienda} alt="Logo sublimarte" /></Link>
             <ul>
-                <li><a href="#">Tazas</a></li>
-                <li><a href="#">Remeras</a></li>
-                <li><a href="#">Fotos</a></li>
+                <Link to="/categoria/tazas">Tazas</Link>
+                <Link to="/categoria/remeras">Remeras</Link>
+                <Link to="/categoria/fotos">Fotos</Link>
             </ul>
         </div>
     )
