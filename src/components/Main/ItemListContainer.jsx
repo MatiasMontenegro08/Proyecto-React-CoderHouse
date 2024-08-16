@@ -3,12 +3,17 @@ import './itemlistcontainer.css';
 import { useParams } from 'react-router-dom';
 import ItemList from './ItemList';
 import obtenerProductos from '../../data/data.js';
+import { BeatLoader } from 'react-spinners';
 
 const ItemListContainer = ({ saludo }) => {
     const [productos, setProductos] = useState([]);
+    const [estaCargando, setEstaCargando] = useState(false);
     const { idCategoria } = useParams();
 
     useEffect(() => {
+        //Primero mostrar pantalla de carga.
+        setEstaCargando(true);
+
         obtenerProductos()
             .then((data) => {
                 if (idCategoria) {
@@ -22,13 +27,13 @@ const ItemListContainer = ({ saludo }) => {
                 console.error(error);
             })
             .finally(() => {
-                console.log("Finalizo la promesa");
+                setEstaCargando(false);
             });
     }, [idCategoria]);
     return (
         <main>
             <h1>{saludo}</h1>
-            <ItemList productos={productos} />
+            { estaCargando ? <BeatLoader color="magenta" /> : <ItemList productos={productos} />}
         </main>
     )
 }

@@ -4,7 +4,7 @@ import './footer.css'
 const Footer = () => {
     return (
         <footer>
-            <p>Proyecto para curso de React Js - CoderHouse</p>
+            <p>Proyecto para curso de React Js - CoderHouse - Montenegro Matías</p>
         </footer>
     )
 }

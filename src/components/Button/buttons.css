@@ -1,0 +1,16 @@
+.btn-cantidades{
+    width: 150px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+
+    button{
+        background-color: transparent;
+        border: none;
+        display: flex;
+        font-size: 18px;
+    }
+}
