@@ -5,16 +5,17 @@ import ItemDetailInfo from './ItemDetailInfo'
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
 import { Link } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
-const ItemDetail = ( { producto } ) => {
+const ItemDetail = ({ producto }) => {
 
     const { agregarProducto } = useContext(CartContext);
-    const [ mostrarItemCount, setMostrarItemCount] = useState(true)
+    const [mostrarItemCount, setMostrarItemCount] = useState(true)
 
     const agregarAlCarrito = (contador) => {
-        const productoCarrito = { ...producto, cantidad: contador};
+        const productoCarrito = { ...producto, cantidad: contador };
         agregarProducto(productoCarrito);
-
+        toast.success("Producto agregado al carrito");
         //Ocultar el componente ItemCount
         setMostrarItemCount(false);
     }
@@ -33,7 +34,7 @@ const ItemDetail = ( { producto } ) => {
                 <ItemDetailInfo producto={producto} />
                 {
                     //Renderizado condicional con una variable de estado.
-                    mostrarItemCount ? (<ItemCount stock={producto.stock} agregarAlCarrito={agregarAlCarrito} /> ) : (<Link to="/cart">Ir al carrito</Link>)
+                    mostrarItemCount ? (<ItemCount stock={producto.stock} agregarAlCarrito={agregarAlCarrito} />) : (<Link to="/cart" className='btn-ir-carrito'>Ir al carrito</Link>)
                 }
             </div>
         </section>

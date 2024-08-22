@@ -1,0 +1,28 @@
+{
+    "preguntasFrecuentes": [
+        {
+            "pregunta": "¿Todos los productos son personalizados?",
+            "respuesta": "Sí, todos nuestros productos se pueden personalizar. Podés elegir el diseño que más te guste. Lo mejor es que podemos sumarle los detalles que quieras, como una foto, una frase, nombres o una fecha importante."
+        },
+        {
+            "pregunta": "¿Qué medios de pago aceptan?",
+            "respuesta": "Tenemos disponibles todos los medios de pago. Aceptamos tarjetas de crédito, débito, Mercado Pago y transferencia bancaria o depósito."
+        },
+        {
+            "pregunta": "¿Hay mínimo de compra de productos?",
+            "respuesta": "Sí, en el detalle de cada producto vas a encontrar la información referida a las cantidades mínimas de compra."
+        },
+        {
+            "pregunta": "¿Hacen envíos a domicilio?",
+            "respuesta": "Los envíos los realizamos mediante Correo Argentino, OCA y Andreani. Podés elegir, cuando realices la compra, si querés envío a domicilio o a sucursal."
+        },
+        {
+            "pregunta": "¿Cuánto tarda en estar listo mi pedido?",
+            "respuesta": "El tiempo de producción de tu pedido es de 2 a 5 días hábiles, dependiendo del producto y la cantidad. Una vez que esté listo, lo enviamos por el medio de envío que elegiste, y se entregará en un plazo de 5-7 días hábiles."
+        },
+        {
+            "pregunta": "Necesito los productos antes de sus plazos habituales de entrega. ¿Es posible?",
+            "respuesta": "Algunos productos podrían ser entregados antes del tiempo normal de espera. Para entregas en fechas específicas, comunícate al WhatsApp y coordinamos."
+        }
+    ]
+}

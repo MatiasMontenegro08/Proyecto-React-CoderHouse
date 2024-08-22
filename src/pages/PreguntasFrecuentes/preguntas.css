@@ -1,0 +1,18 @@
+.container-preguntas-frecuentes{
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px rgba(121, 121, 121, 0.349);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-preguntas{
+    border-bottom: 1px solid rgb(177, 177, 177);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ButtonFunction = ({funcion, parametro, texto}) => {
+const ButtonFunction = ({ funcion, parametro, texto }) => {
     return (
         <button onClick={() => funcion(parametro)}>
             {texto}

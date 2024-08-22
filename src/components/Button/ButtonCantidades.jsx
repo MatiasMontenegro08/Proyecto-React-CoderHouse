@@ -1,30 +1,27 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { IoAddCircleOutline } from "react-icons/io5";
 import { GrSubtractCircle } from "react-icons/gr";
 import './buttons.css'
 
-const ButtonCantidades = () => {
-    const [cantidad, setCantidad] = useState(1)
-    const stock = 10
-    const aumentarCantidad = () => {
-        if (cantidad < stock){
-            setCantidad(cantidad + 1)
-        }
-    }
-    const disminuirCantidad = () => {
-        if (cantidad > 1) {
-            setCantidad(cantidad - 1)
-        }
-    }
+const ButtonCantidades = ({ productoCarrito, actualizarCantidad }) => {
+    const [cantidad, setCantidad] = useState(productoCarrito.cantidad)
+
+    useEffect(() => {
+        setCantidad(productoCarrito.cantidad);
+    }, [productoCarrito.cantidad]);
+
     return (
-        <div className='btn-cantidades'>
-            <button onClick={disminuirCantidad}>
-                <GrSubtractCircle/>
-            </button>
-            <p>{cantidad}</p>
-            <button onClick={aumentarCantidad} >
-                <IoAddCircleOutline/>
-            </button>
+        <div className='container-btn-cantidades'>
+            <div className='btn-cantidades'>
+                <button onClick={() => setCantidad(actualizarCantidad(productoCarrito.id, 'disminuir'))}>
+                    <GrSubtractCircle />
+                </button>
+                <p>{cantidad}</p>
+                <button onClick={() => setCantidad(actualizarCantidad(productoCarrito.id, 'aumentar'))} >
+                    <IoAddCircleOutline />
+                </button>
+            </div>
+            <p>$ {productoCarrito.precio * cantidad}</p>
         </div>
     )
 }

@@ -1,10 +1,16 @@
 import React from 'react'
+import ListaNavegacion from '../NavBar/ListaNavegacion'
+import logoTienda from '../../assets/img/Logosublimarte.png'
+import Logo from '../Logos/Logo'
+import Redes from './Redes'
 import './footer.css'
 
 const Footer = () => {
     return (
         <footer>
-            <p>Proyecto para curso de React Js - CoderHouse - Montenegro Matías</p>
+            <Logo img={logoTienda} nombre={"Logo Sublimarte"} />
+            <ListaNavegacion />
+            <Redes />
         </footer>
     )
 }

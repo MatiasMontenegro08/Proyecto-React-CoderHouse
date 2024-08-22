@@ -1,5 +1,12 @@
+.container-btn-cantidades{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+}
 .btn-cantidades{
-    width: 150px;
+    width: 110px;
     border: 1px solid black;
     display: flex;
     justify-content: space-between;

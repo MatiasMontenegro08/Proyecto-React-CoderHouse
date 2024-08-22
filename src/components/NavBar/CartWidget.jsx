@@ -9,7 +9,7 @@ const CartWidget = () => {
     let cantidad = cantidadTotal();
     return (
         <Link to="/cart" className='carrito'>
-            <HiOutlineShoppingCart size={30} style={cantidad === 0 && {color: "rgba(112, 112, 112, 0.678)"}} />
+            <HiOutlineShoppingCart size={30} style={cantidad === 0 && { color: "rgba(112, 112, 112, 0.678)" }} />
             <p>{cantidad > 0 && cantidad}</p>
         </Link>
     )

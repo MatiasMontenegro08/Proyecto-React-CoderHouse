@@ -1,0 +1,56 @@
+.container-checout{
+    width: 100%;
+    background-color: white;
+}
+.container-orden{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px 1px rgba(121, 121, 121, 0.349);
+}
+.container-orden-img{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+}
+.container-orden-body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+.idOrden{
+    font-size: 2rem;
+}
+.btn-volver{
+    background-color: magenta;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+.checkout-formulario{
+    width: min(content, 300px);
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+}
+
+.input-form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.btn-orden{
+    padding: 10px;
+}

@@ -52,9 +52,43 @@
     gap: 10px;
     
 }
+.btn-borrar{
+    padding: 2px;
+
+    &:hover{
+        background-color: magenta;
+    }
+}
+
+.container-resumen{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .cart-resumen{
     height: max-content;
     border: 1px solid rgba(112, 112, 112, 0.678);
     border-radius: 5px;
     padding: 10px;
+}
+.btn-compra{
+    background-color: magenta;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.carrito-vacio{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    gap: 20px;
+}
+.btn-ver-productos{
+    background-color: magenta;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
 }

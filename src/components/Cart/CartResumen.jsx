@@ -1,20 +1,23 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { CartContext } from '../../context/CartContext'
-import ButtonFunction from '../Button/ButtonFunction'
+import { Link } from 'react-router-dom';
 import './cartcontainer.css'
 
 const CartResumen = () => {
-    const {precioTotal} = useContext(CartContext);
+    const { carrito, precioTotal } = useContext(CartContext);
+
     return (
-        <aside className='cart-resumen'>
-            <h2>Resumen de compra</h2>
-            <p>Productos</p>
-            <p className='text-precio'>$</p>
-            <p>Envío</p>
-            <p className='text-precio'>$</p>
-            <h3>Total:</h3>
-            {/* <p className='text-precio'>Total carrito: $ {precioTotal()}</p> */}
-            {/* <ButtonFunction comprar={Comprar}/> */}
+        <aside className='container-resumen'>
+            <div className='cart-resumen'>
+                <h2>Resumen de compra</h2>
+                <p>Productos</p>
+                <p className='text-precio'>$ {precioTotal()}</p>
+                <p>Envío</p>
+                <p className='text-precio'>$ -</p>
+                <h3>Total:</h3>
+                <p className='text-precio'>Total carrito: $ {precioTotal()}</p>
+            </div>
+            {carrito.length > 0 && <Link to="/checkout" className='btn-compra'>Continuar con el pago</Link>}
         </aside>
     )
 }
