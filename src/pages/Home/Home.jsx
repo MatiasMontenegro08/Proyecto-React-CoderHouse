@@ -1,6 +1,6 @@
 import React from 'react'
 import MetodosPago from './MetodosPago';
-import banner from '/img/bannersuperior1.png'
+import banner from '/img/bannersuperior1.svg'
 import './home.css';
 import { Link } from 'react-router-dom';
 
