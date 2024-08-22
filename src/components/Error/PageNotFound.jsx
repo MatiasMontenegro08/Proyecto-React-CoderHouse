@@ -1,7 +1,7 @@
 import React from 'react'
 import './error.css'
 import { Link } from 'react-router-dom'
-import ImgError404 from '../../assets/img/error404.svg'
+import ImgError404 from '/img/error404.svg'
 
 const PageNotFound = () => {
     return (

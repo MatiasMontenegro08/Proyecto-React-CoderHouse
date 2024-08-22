@@ -1,8 +1,8 @@
 import React from 'react'
 import './nosotros.css'
 import CardPerfil from './CardPerfil'
-import perfil1 from '../../assets/img/soriperfil.svg'
-import perfil2 from '../../assets/img/matiperfil.svg'
+import perfil1 from '/img/soriperfil.svg'
+import perfil2 from '/img/matiperfil.svg'
 import dataNosotros from '../../database/dataNosotros.json'
 
 const Nosotros = () => {

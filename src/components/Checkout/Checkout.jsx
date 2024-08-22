@@ -5,7 +5,7 @@ import FormularioCheckout from './FormularioCheckout';
 import database from '../../database/database';
 import { Link } from 'react-router-dom';
 import validateForm from '../../utils/validacionFormulario.js';
-import imgPedidoConfirmado from '../../assets/img/pedidoconfirmado.svg';
+import imgPedidoConfirmado from '/img/pedidoconfirmado.svg';
 import { toast } from 'react-toastify';
 import './checkout.css';
 

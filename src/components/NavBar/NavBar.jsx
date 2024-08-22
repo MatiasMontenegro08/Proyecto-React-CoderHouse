@@ -1,7 +1,7 @@
 import React from 'react'
 import ListaNavegacion from './ListaNavegacion'
 import CartWidget from './CartWidget'
-import logoTienda from '../../assets/img/Logosublimarte.png'
+import logoTienda from '/img/Logosublimarte.png'
 import './navbar.css'
 import Logo from '../Logos/Logo'
 

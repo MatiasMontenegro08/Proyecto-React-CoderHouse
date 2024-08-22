@@ -1,6 +1,6 @@
 import React from 'react'
 import ListaNavegacion from '../NavBar/ListaNavegacion'
-import logoTienda from '../../assets/img/Logosublimarte.png'
+import logoTienda from '/img/Logosublimarte.png'
 import Logo from '../Logos/Logo'
 import Redes from './Redes'
 import './footer.css'
